@@ -1,0 +1,17 @@
+// 話題ジェネレーターのコード
+document.getElementById('generate-topic').addEventListener('click', () => {
+    const topics = [
+        '最近見た面白い映画は？',
+        '行ってみたい旅行先はどこ？',
+        '子供の頃の夢は何だった？',
+        'お気に入りの食べ物は？',
+        '最近ハマっていることは？',
+        '好きな季節とその理由は？',
+        'もし宝くじが当たったら何をしたい？',
+        '一番印象に残っている旅行の思い出は？',
+    ];
+
+    // ランダムに話題を表示
+    const randomIndex = Math.floor(Math.random() * topics.length);
+    document.getElementById('topic-display').textContent = topics[randomIndex];
+});
